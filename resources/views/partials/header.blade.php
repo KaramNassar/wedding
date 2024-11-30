@@ -1,14 +1,21 @@
-<header class='sticky top-0 bg-white shadow-md z-[100]' x-data="{ mobileMenuIsOpen : false }"
+<header class='sticky top-0 bg-gradient-to-r from-pink-200 via-pink-100 to-pink-300 shadow-md z-[100]'
+        x-data="{ mobileMenuIsOpen : false }"
         @click.away="mobileMenuIsOpen = false">
     <x-container>
         <section
             class='flex items-center justify-between py-2'>
 
-                <a href="/" class="text-2xl font-bold text-gray-800 text-start">Hussam & Dzaghig</a>
-{{--            <a href="{{ route('home') }}" class="shrink-0">--}}
-
-{{--                <img src="{{ asset('storage/' . $settings?->site_logo) }}" alt="logo" class='w-20'/>--}}
-{{--            </a>--}}
+            <a href="{{ route('home') }}" class="group">
+                <div class="flex items-center justify-center gap-2 text-xl font-serif text-pink-700">
+                    <span class="font-bold">John</span>
+                    <svg class="w-8 h-8 text-red-500 group-hover:animate-ping" xmlns="http://www.w3.org/2000/svg"
+                         fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span class="font-bold">Emma</span>
+                </div>
+            </a>
 
             <div class='absolute lg:relative flex flex-wrap justify-center px-10 py-3'>
 
@@ -31,7 +38,7 @@
             <div class="flex justify-between gap-2">
                 <div class="flex items-center space-x-2">
                     <span class="relative">
-{{--                        <x-header.language-switcher/>--}}
+                        <x-language-switcher/>
                     </span>
 
                 </div>

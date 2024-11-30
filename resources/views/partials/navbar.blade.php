@@ -1,7 +1,37 @@
-<ul
-    class='max-lg:fixed max-lg:top-0 max-lg:left-0 rtl:max-lg:right-0 z-50 max-lg:h-full max-lg:w-2/3 max-lg:overflow-auto max-lg:bg-white max-lg:p-4 max-lg:shadow-md max-lg:space-y-3 max-lg:min-w-[300px] lg:flex lg:gap-x-8'>
-    <li><a href="/" class="text-gray-800 hover:text-pink-500">Home</a></li>
-    <li><a href="#story" class="text-gray-800 hover:text-pink-500">Our Story</a></li>
-    <li><a href="#details" class="text-gray-800 hover:text-pink-500">Event Details</a></li>
-    <li><a href="#rsvp" class="text-gray-800 hover:text-pink-500">RSVP</a></li>
+<ul class="bg-gradient-to-br from-pink-200 via-pink-100 to-pink-300 max-lg:fixed max-lg:top-0 max-lg:left-0 rtl:max-lg:right-0 z-50 max-lg:h-full max-lg:w-1/2 max-lg:overflow-auto lg:bg-none max-lg:p-4 max-lg:shadow-md max-lg:space-y-3 max-lg:min-w-[300px] lg:flex lg:gap-x-8  transition-all duration-500 ease-in-out">
+    <li>
+        <a href="{{ route('home') }}" class="py-2 text-pink-800 relative group">{{ trans('Home') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#wedding-party" class="py-2 text-pink-800 relative group">{{ trans('Wedding Party') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#schedule" class="py-2 text-pink-800 relative group">{{ trans('Schedule') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#gallery" class="py-2 text-pink-800 relative group">{{ trans('Gallery') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#our-story" class="py-2 text-pink-800 relative group">{{ trans('Our Story') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#faqs" class="py-2 text-pink-800 relative group">{{ trans('FAQs') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
+    <li>
+        <a href="#rsvp" class="py-2 text-pink-800 relative group">{{ trans('RSVP') }}
+            <span class="absolute left-0 bottom-0 block w-0 h-0.5 bg-pink-800 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+    </li>
 </ul>

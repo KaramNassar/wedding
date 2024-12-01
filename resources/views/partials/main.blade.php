@@ -1,3 +1,3 @@
-<x-hero>
+<x-hero/>
 
-</x-hero>
+<x-count-down/>

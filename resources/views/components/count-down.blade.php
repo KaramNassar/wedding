@@ -1,52 +1,48 @@
-<section class="py-4 bg-pink-50 text-center">
-    <div class="w-full h-80 rounded-2xl flex gap-4 flex-col items-center justify-center">
-        <h2 class="text-3xl font-bold text-pink-700 sm:text-4xl">Countdown to Our Big Day</h2>
-        <p class="text-lg text-pink-600">We can't wait to celebrate with you!</p>
+<x-section :title="trans('Countdown to Our Big Day')" :description="trans('We can\'t wait to celebrate with you!')">
 
-        <div class="flex items-start justify-center w-full gap-1.5 count-down-main mt-2 text-pink-700">
+    <div class="flex items-start justify-center w-full gap-1.5 count-down-main mt-2 text-pink-700">
 
-            <div class="timer">
-                <div
-                    class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
-                    <h3
-                        class="countdown-element days font-manrope font-semibold text-2xl text-white text-center">
-                    </h3>
-                    <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">days</p>
-                </div>
+        <div class="timer">
+            <div
+                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                <h3
+                    class="countdown-element days font-semibold text-2xl text-white text-center">
+                </h3>
+                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">days</p>
             </div>
+        </div>
 
-            <div class="timer">
-                <div
-                    class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
-                    <h3
-                        class="countdown-element hours font-manrope font-semibold text-2xl text-white text-center">
-                    </h3>
-                    <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">Hour</p>
-                </div>
+        <div class="timer">
+            <div
+                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                <h3
+                    class="countdown-element hours font-semibold text-2xl text-white text-center">
+                </h3>
+                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">Hour</p>
             </div>
+        </div>
 
-            <div class="timer">
-                <div
-                    class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
-                    <h3
-                        class="countdown-element minutes font-manrope font-semibold text-2xl text-white text-center">
-                    </h3>
-                    <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Minutes</p>
-                </div>
+        <div class="timer">
+            <div
+                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                <h3
+                    class="countdown-element minutes font-semibold text-2xl text-white text-center">
+                </h3>
+                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Minutes</p>
             </div>
+        </div>
 
-            <div class="timer">
-                <div
-                    class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
-                    <h3
-                        class="countdown-element seconds font-manrope font-semibold text-2xl text-white text-center">
-                    </h3>
-                    <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Seconds</p>
-                </div>
+        <div class="timer">
+            <div
+                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                <h3
+                    class="countdown-element seconds font-semibold text-2xl text-white text-center">
+                </h3>
+                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Seconds</p>
             </div>
         </div>
     </div>
-</section>
+</x-section>
 <script>
     // count-down timer
     let dest = new Date("apr 25, 2025 10:00:00").getTime();

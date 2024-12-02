@@ -1,30 +1,20 @@
 import './bootstrap';
 
-const lightSwitches = document.querySelectorAll('.light-switch');
-if (lightSwitches.length > 0) {
-    lightSwitches.forEach((lightSwitch, i) => {
-        if (localStorage.getItem('dark-mode') === 'true') {
-            lightSwitch.checked = true;
-        }
-        lightSwitch.addEventListener('change', () => {
-            const {checked} = lightSwitch;
-            lightSwitches.forEach((el, n) => {
-                if (n !== i) {
-                    el.checked = checked;
-                }
-            });
-            if (lightSwitch.checked) {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('dark-mode', true);
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('dark-mode', false);
-            }
-        });
-    });
-}
-if (localStorage.getItem('dark-mode') === 'true' || (!('dark-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.querySelector('html').classList.add('dark');
-} else {
-    document.querySelector('html').classList.remove('dark');
-}
+import Swiper from 'swiper/bundle';
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 32,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+
+});

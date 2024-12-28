@@ -17,6 +17,8 @@ class Setting extends Model
         'secondary_color'
     ];
 
+
+
     protected function casts(): array
     {
         return [

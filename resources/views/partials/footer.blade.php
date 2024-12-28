@@ -93,7 +93,7 @@
             </div>
             <div class="px-6 mx-auto text-pink-800 text-center">
                 <p>&copy; 2024 Hussam & Dzaghig Wedding. All Rights Reserved.</p>
-                <p>Designed with ❤️ by Karam</p>
+                <p>Designed with ❤️ by karam.nassar@hotmail.com</p>
             </div>
         </div>
     </div>

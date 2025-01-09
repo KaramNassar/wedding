@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Models\Setting;
+use ArberMustafa\FilamentLocationPickrField\Forms\Components\LocationPickr;
 use Filament\Forms;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\DatePicker;
@@ -33,7 +34,7 @@ class Settings extends Page implements Forms\Contracts\HasForms
             'groom_name' => $settings->groom_name,
             'bride_name' => $settings->bride_name,
             'date' => $settings->date,
-            'locations' => $settings->locations,
+            'events' => $settings->events,
             'phone' => $settings->phone,
             'email' => $settings->email,
             'main_color' => $settings->main_color,
@@ -71,12 +72,27 @@ class Settings extends Page implements Forms\Contracts\HasForms
                         ->required()
                         ->columnSpanFull(),
 
-                    Repeater::make('locations')
+                    Repeater::make('events')
                         ->schema([
-                            TextInput::make('event name'),
+                            TextInput::make('name'),
                             TextInput::make('address'),
                             DateTimePicker::make('date'),
-                            TextInput::make('coordinates'),
+                            LocationPickr::make('location')
+                                ->mapControls([
+                                    'mapTypeControl'    => true,
+                                    'scaleControl'      => true,
+                                    'streetViewControl' => true,
+                                    'rotateControl'     => true,
+                                    'fullscreenControl' => true,
+                                    'zoomControl'       => false,
+                                    'searchBoxControl'  => true,
+                                ])
+                                ->defaultZoom(5)
+                                ->draggable()
+                                ->clickable()
+                                ->height('40vh')
+                                ->defaultLocation([41.32836109345274, 19.818383186960773])
+                                ->myLocationButtonLabel('My location'),
                         ])->columnSpanFull()
                 ])->columnSpan('sm'),
 

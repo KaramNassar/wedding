@@ -8,7 +8,7 @@
                 <h3
                     class="countdown-element days font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">days</p>
+                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">{{ trans('days') }}</p>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
                 <h3
                     class="countdown-element hours font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">Hour</p>
+                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">{{ trans('Hour') }}</p>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
                 <h3
                     class="countdown-element minutes font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Minutes</p>
+                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">{{ trans('Minutes') }}</p>
             </div>
         </div>
 
@@ -38,19 +38,19 @@
                 <h3
                     class="countdown-element seconds font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Seconds</p>
+                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">{{ trans('Seconds') }}</p>
             </div>
         </div>
     </div>
 </x-section>
 <script>
     // count-down timer
-    let dest = new Date("apr 25, 2025 10:00:00").getTime();
+    let dest = new Date("{{ $settings->date }}").getTime();
     let x = setInterval(function () {
         let now = new Date().getTime();
         let diff = dest - now;
 
-// Check if the countdown has reached zero or negative
+        // Check if the countdown has reached zero or negative
         if (diff <= 0) {
             clearInterval(x); // Stop the countdown
             return; // Exit the function
@@ -74,10 +74,10 @@
             seconds = `0${seconds}`;
         }
 
-// Get elements by class name
+        // Get elements by class name
         let countdownElements = document.getElementsByClassName("countdown-element");
 
-// Loop through the elements and update their content
+        // Loop through the elements and update their content
         for (let i = 0; i < countdownElements.length; i++) {
             let className = countdownElements[i].classList[1]; // Get the second class name
             switch (className) {

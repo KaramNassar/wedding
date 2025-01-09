@@ -9,7 +9,7 @@ class Setting extends Model
     protected $fillable = [
         'groom_name',
         'bride_name',
-        'locations',
+        'events',
         'date',
         'phone',
         'email',
@@ -22,7 +22,8 @@ class Setting extends Model
     protected function casts(): array
     {
         return [
-            'locations' => 'array',
+            'events' => 'array',
+            'date' => 'datetime',
         ];
     }
 

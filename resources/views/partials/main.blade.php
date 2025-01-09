@@ -2,8 +2,9 @@
 
 <x-count-down/>
 
-<x-map/>
+<x-events/>
 
 <x-wishes/>
 
 <div class="bg-pink-50 h-20"></div>
+

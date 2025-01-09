@@ -14,6 +14,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
+use Filament\Tables\Columns\TextColumn;
 
 class Settings extends Page implements Forms\Contracts\HasForms
 {
@@ -77,22 +78,11 @@ class Settings extends Page implements Forms\Contracts\HasForms
                             TextInput::make('name'),
                             TextInput::make('address'),
                             DateTimePicker::make('date'),
-                            LocationPickr::make('location')
-                                ->mapControls([
-                                    'mapTypeControl'    => true,
-                                    'scaleControl'      => true,
-                                    'streetViewControl' => true,
-                                    'rotateControl'     => true,
-                                    'fullscreenControl' => true,
-                                    'zoomControl'       => false,
-                                    'searchBoxControl'  => true,
+                            Fieldset::make('location')
+                                ->schema([
+                                    TextInput::make('location.lat'),
+                                    TextInput::make('location.lng'),
                                 ])
-                                ->defaultZoom(5)
-                                ->draggable()
-                                ->clickable()
-                                ->height('40vh')
-                                ->defaultLocation([41.32836109345274, 19.818383186960773])
-                                ->myLocationButtonLabel('My location'),
                         ])->columnSpanFull()
                 ])->columnSpan('sm'),
 

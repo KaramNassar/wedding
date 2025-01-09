@@ -4,7 +4,7 @@
         <p class="text-lg px-4 mb-8 text-pink-600">{{ trans('Wishes from family and friends for our special day') }}</p>
         {{ $slot }}
     </div>
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper w-max">
                 @foreach($wishes as $wish)
@@ -23,7 +23,7 @@
                                             <div class="flex justify-center flex-col items-center gap-2">
                                                 <div>
                                                     <img alt="" loading="lazy"
-                                                         class="mx-auto h-48 w-48 rounded-full"
+                                                         class="mx-auto h-28 w-28 rounded-full"
                                                          src="{{ $wish->photo_url }}">
                                                 </div>
                                                 <div class="text-base leading-6 font-medium text-pink-700">

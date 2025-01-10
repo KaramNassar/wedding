@@ -9,7 +9,7 @@ class Wishes extends Component
 {
     public function render()
     {
-        $wishes = Wish::latest()->get();
+        $wishes = Wish::latest()->whereConfirmed(1)->get();
 
         return view('components.wishes', [
             'wishes' => $wishes

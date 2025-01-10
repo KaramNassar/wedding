@@ -21,11 +21,6 @@
                                         </div>
                                         <footer class="mt-8">
                                             <div class="flex justify-center flex-col items-center gap-2">
-                                                <div>
-                                                    <img alt="" loading="lazy"
-                                                         class="mx-auto h-28 w-28 rounded-full"
-                                                         src="{{ $wish->photo_url }}">
-                                                </div>
                                                 <div class="text-base leading-6 font-medium text-pink-700">
                                                     {{ $wish->name }}
                                                 </div>

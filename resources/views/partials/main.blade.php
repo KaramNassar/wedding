@@ -6,5 +6,5 @@
 
 <x-wishes/>
 
-<div class="bg-pink-50 h-20"></div>
+<div class="h-20"></div>
 

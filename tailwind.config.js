@@ -6,7 +6,8 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
                 cairo: ['Cairo', 'sans-serif'],
-                roboto: ['Roboto', 'sans-serif']
+                roboto: ['Roboto', 'sans-serif'],
+                great: ['Great Vibes', 'sans-serif'],
             },
         },
     },

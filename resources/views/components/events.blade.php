@@ -5,10 +5,10 @@
         @foreach($settings->events as $event)
 
             <!-- Location 1 -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-2xl font-bold text-pink-700">{{ $event['name'] }}</h3>
+            <div class="bg-amber-50 rounded-lg shadow-xl border border-amber-800 p-6">
+                <h3 class="text-2xl font-bold text-amber-800">{{ $event['name'] }}</h3>
                 @foreach(explode('|', $event['address']) as $address)
-                    <p class="text-pink-600">{{ $address }}</p>
+                    <p class="text-amber-700">{{ $address }}</p>
                 @endforeach
                 <p class="mt-2 text-sm text-gray-500">{{ trans('Date') . ": " . Carbon::parse($event['date'])->format('F d, Y') }}
                     | {{ trans('Time') . ": " . Carbon::parse($event['date'])->format('h:i A') }}

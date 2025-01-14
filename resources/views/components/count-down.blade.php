@@ -1,10 +1,10 @@
 <x-section :title="trans('Countdown to Our Big Day')" :description="trans('We can\'t wait to celebrate with you!')">
 
-    <div class="flex items-start justify-center w-full gap-1.5 count-down-main mt-2 text-pink-700">
+    <div class="flex items-start justify-center w-full gap-1.5 count-down-main mt-2 text-amber-700">
 
         <div class="timer">
             <div
-                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
                     class="countdown-element days font-semibold text-2xl text-white text-center">
                 </h3>
@@ -14,7 +14,7 @@
 
         <div class="timer">
             <div
-                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
                     class="countdown-element hours font-semibold text-2xl text-white text-center">
                 </h3>
@@ -24,7 +24,7 @@
 
         <div class="timer">
             <div
-                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
                     class="countdown-element minutes font-semibold text-2xl text-white text-center">
                 </h3>
@@ -34,7 +34,7 @@
 
         <div class="timer">
             <div
-                class="rounded-xl bg-pink-300 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
                     class="countdown-element seconds font-semibold text-2xl text-white text-center">
                 </h3>

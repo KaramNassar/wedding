@@ -12,7 +12,7 @@
 
         <div class="max-w-4xl mx-auto">
             <!-- Question 1 -->
-            <div x-data="{ open: false }" class="mb-6 bg-amber-800 rounded-lg shadow-md overflow-hidden">
+            <div x-data="{ open: false }" class="mb-6 bg-amber-900 rounded-lg shadow-md overflow-hidden">
                 <button @click="open = !open" class="w-full text-left px-6 py-4 focus:outline-none">
                     <div class="flex justify-between items-center">
                         <span class="text-lg font-medium text-amber-50">What should I wear to the wedding?</span>
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div x-data="{ open: false }" class="mb-6 bg-amber-800 rounded-lg shadow-md overflow-hidden">
+            <div x-data="{ open: false }" class="mb-6 bg-amber-900 rounded-lg shadow-md overflow-hidden">
                 <button @click="open = !open" class="w-full text-left px-6 py-4 focus:outline-none">
                     <div class="flex justify-between items-center">
                         <span class="text-lg font-medium text-amber-50">What should I wear to the wedding?</span>
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div x-data="{ open: false }" class="mb-6 bg-amber-800 rounded-lg shadow-md overflow-hidden">
+            <div x-data="{ open: false }" class="mb-6 bg-amber-900 rounded-lg shadow-md overflow-hidden">
                 <button @click="open = !open" class="w-full text-left px-6 py-4 focus:outline-none">
                     <div class="flex justify-between items-center">
                         <span class="text-lg font-medium text-amber-50">What should I wear to the wedding?</span>
@@ -77,7 +77,7 @@
 
         </div>
 
-        <div class="max-w-4xl mx-auto mt-12 bg-amber-800 p-6 rounded-lg shadow-lg">
+        <div class="max-w-4xl mx-auto mt-12 bg-amber-900 p-6 rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-amber-50 mb-4">Have a question that's not listed here?</h2>
             <form action="/submit-question" method="POST" class="space-y-4">
                 <div>
@@ -92,7 +92,7 @@
                     <label for="question" class="block text-amber-100 font-medium mb-2">Your Question</label>
                     <textarea id="question" name="question" rows="4" class="w-full px-4 py-2 border rounded-lg bg-amber-50 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Enter your question" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-amber-700 text-white font-medium py-2 rounded-lg shadow-lg hover:bg-amber-600 focus:ring-2 focus:ring-amber-500">Submit Question</button>
+                <button type="submit" class="w-full bg-amber-800 text-white font-medium py-2 rouded-lg shadow-lg hover:bg-amber-700 focus:ring-2 focus:ring-amber-500">Submit Question</button>
             </form>
         </div>
     </section>

@@ -13,8 +13,7 @@ class Stories extends Page implements Forms\Contracts\HasForms
 {
     use Forms\Concerns\InteractsWithForms;
 
-    protected static ?string $navigationIcon = 'heroicon-o-cog';
-    protected static ?string $navigationGroup = 'Stories';
+    protected static ?string $navigationIcon = 'heroicon-o-bolt';
     protected static ?string $title = 'Stories';
     protected static string $view = 'filament.pages.Stories';
 

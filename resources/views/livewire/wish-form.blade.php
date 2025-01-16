@@ -24,7 +24,7 @@
         @enderror
     </div>
     <button type="submit"
-            class="w-full py-2 px-4 bg-amber-700 hover:bg-amber-600 text-amber-100 rounded-lg flex items-center justify-center">
+            class="w-full py-2 px-4 bg-amber-800 hover:bg-amber-700 text-amber-100 rounded-lg flex items-center justify-center">
             <span>{{ trans('Submit') }}</span>
     </button>
 </form>

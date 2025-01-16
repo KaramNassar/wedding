@@ -3,7 +3,6 @@
 namespace App\Filament\Pages;
 
 use App\Models\Setting;
-use ArberMustafa\FilamentLocationPickrField\Forms\Components\LocationPickr;
 use Filament\Forms;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\DatePicker;
@@ -14,7 +13,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
-use Filament\Tables\Columns\TextColumn;
 
 class Settings extends Page implements Forms\Contracts\HasForms
 {
@@ -32,13 +30,13 @@ class Settings extends Page implements Forms\Contracts\HasForms
         $settings = Setting::firstOrNew();
 
         $this->form->fill([
-            'groom_name' => $settings->groom_name,
-            'bride_name' => $settings->bride_name,
-            'date' => $settings->date,
-            'events' => $settings->events,
-            'phone' => $settings->phone,
-            'email' => $settings->email,
-            'main_color' => $settings->main_color,
+            'groom_name'      => $settings->groom_name,
+            'bride_name'      => $settings->bride_name,
+            'date'            => $settings->date,
+            'events'          => $settings->events,
+            'phone'           => $settings->phone,
+            'email'           => $settings->email,
+            'main_color'      => $settings->main_color,
             'secondary_color' => $settings->secondary_color,
         ]);
     }
@@ -52,6 +50,14 @@ class Settings extends Page implements Forms\Contracts\HasForms
         $settings->save();
 
         $this->successNotification('success', 'Wedding settings updated successfully!');
+    }
+
+    private function successNotification(string $title): void
+    {
+        Notification::make()
+            ->title($title)
+            ->success()
+            ->send();
     }
 
     public function form(Form $form): Form
@@ -105,13 +111,5 @@ class Settings extends Page implements Forms\Contracts\HasForms
                 ]),
 
         ])->statePath('data');
-    }
-
-    private function successNotification(string $title): void
-    {
-        Notification::make()
-            ->title($title)
-            ->success()
-            ->send();
     }
 }

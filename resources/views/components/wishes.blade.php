@@ -1,7 +1,7 @@
 <section class="pt-28 pb-4 text-center">
     <div class="w-full rounded-2xl flex gap-4 flex-col items-center justify-center">
-        <h2 class="text-3xl font-bold text-amber-900 sm:text-4xl">{{ trans('From Our Loved Ones') }}</h2>
-        <p class="text-lg px-4 mb-8 text-amber-800">{{ trans('Wishes from family and friends for our special day') }}</p>
+        <h2 class="text-3xl font-bold text-amber-900 sm:text-4xl">{{ trans('common.wishes.title') }}</h2>
+        <p class="text-lg px-4 mb-8 text-amber-800">{{ trans('common.wishes.subtitle') }}</p>
         {{ $slot }}
     </div>
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
@@ -39,8 +39,8 @@
     </div>
 
     <div class="mt-12 max-w-md mx-2 sm:mx-auto bg-amber-900 shadow-md rounded-lg p-6">
-        <h3 class="text-2xl font-bold text-amber-50">{{ trans('Share Your Love With Us') }}</h3>
-        <p class="mb-8 text-sm text-amber-50">{{ trans('Your kind words mean the world to us! Write a heartfelt wish, let your message be part of our journey') }}</p>
+        <h3 class="text-2xl font-bold text-amber-50">{{ trans('common.wishes.form.title') }}</h3>
+        <p class="mb-8 text-sm text-amber-50">{{ trans('common.wishes.form.subtitle') }}</p>
 
         <livewire:wish-form/>
     </div>

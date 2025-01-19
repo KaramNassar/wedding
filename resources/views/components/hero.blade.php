@@ -15,8 +15,8 @@
                 <span class="font-bold">{{ $settings->bride_name }}</span>
             </div>
         </h1>
-        <p class="mt-20 text-xl font-semibold text-amber-800">{{ trans('Join us as we celebrate our love on') }}</p>
-        <p class="mt-2 text-2xl font-semibold text-amber-800">{{ $settings->date->format('F d, Y') }}</p>
+        <p class="mt-20 text-xl font-semibold text-amber-800">{{ trans('common.hero') }}</p>
+        <p class="mt-2 text-2xl font-semibold text-amber-800">{{ Carbon\Carbon::parse($settings->date)->translatedFormat('F d, Y') }}</p>
 
     </div>
 </section>

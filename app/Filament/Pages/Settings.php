@@ -80,8 +80,32 @@ class Settings extends Page implements Forms\Contracts\HasForms
 
                     Repeater::make('events')
                         ->schema([
-                            TextInput::make('name'),
-                            TextInput::make('address'),
+                            Fieldset::make('Name')
+                                ->schema([
+                                    TextInput::make('name.en')
+                                        ->label('Name (English)')
+                                        ->required(),
+                                    TextInput::make('name.ar')
+                                        ->label('Name (Arabic)')
+                                        ->required(),
+                                    TextInput::make('name.de')
+                                        ->label('Name (German)')
+                                        ->required(),
+                                ])
+                                ->columns(1),
+                            Fieldset::make('Address')
+                                ->schema([
+                                    TextInput::make('address.en')
+                                        ->label('Address (English)')
+                                        ->required(),
+                                    TextInput::make('address.ar')
+                                        ->label('Address (Arabic)')
+                                        ->required(),
+                                    TextInput::make('address.de')
+                                        ->label('Address (German)')
+                                        ->required(),
+                                ])
+                                ->columns(1),
                             DateTimePicker::make('date'),
                             Fieldset::make('location')
                                 ->schema([

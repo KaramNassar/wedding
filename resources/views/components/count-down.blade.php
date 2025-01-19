@@ -1,6 +1,6 @@
-<x-section :title="trans('Countdown to Our Big Day')" :description="trans('We can\'t wait to celebrate with you!')">
+<x-section :title="trans('common.count down.title')" :description="trans('common.count down.subtitle')">
 
-    <div class="flex items-start justify-center w-full gap-1.5 count-down-main mt-2 text-amber-700">
+    <div class="flex items-start justify-center w-full gap-1 sm:1.5 count-down-main mt-2 text-amber-700 mx-1">
 
         <div class="timer">
             <div
@@ -8,7 +8,7 @@
                 <h3
                     class="countdown-element days font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">{{ trans('days') }}</p>
+                <p class="text-lg font-normal text-white mt-1 text-center w-full">{{ trans('common.days') }}</p>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
                 <h3
                     class="countdown-element hours font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">{{ trans('Hour') }}</p>
+                <p class="text-lg font-normal text-white mt-1 text-center w-full">{{ trans('common.hours') }}</p>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
                 <h3
                     class="countdown-element minutes font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">{{ trans('Minutes') }}</p>
+                <p class="text-lg fo font-normal text-white mt-1 text-center w-full">{{ trans('common.minutes') }}</p>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
                 <h3
                     class="countdown-element seconds font-semibold text-2xl text-white text-center">
                 </h3>
-                <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">{{ trans('Seconds') }}</p>
+                <p class="text-lg fo font-normal text-white mt-1 text-center w-full">{{ trans('common.seconds') }}</p>
             </div>
         </div>
     </div>

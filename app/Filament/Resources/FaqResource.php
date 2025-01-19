@@ -19,6 +19,11 @@ class FaqResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-question-mark-circle';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return Faq::query()->whereAnswer(0)->count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -58,7 +63,7 @@ class FaqResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('question.en')
+                Tables\Columns\TextColumn::make('question')
                     ->label('Question (English)')
                     ->limit(50),
                 Tables\Columns\IconColumn::make('is_answered')

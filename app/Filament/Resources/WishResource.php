@@ -16,6 +16,11 @@ class WishResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-bottom-center-text';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return Wish::query()->whereConfirmed(0)->count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form

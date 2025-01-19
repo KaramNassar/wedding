@@ -34,6 +34,6 @@ class WishForm extends Component
         $this->name = null;
         $this->message = null;
 
-        session()->flash('success', 'Thank you, your message will be shown soon');
+        session()->flash('success', trans('common.wishes.form.success'));
     }
 }

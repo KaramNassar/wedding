@@ -37,7 +37,7 @@ class FaqSection extends Component
         $this->name = '';
         $this->email = '';
         $this->question = '';
-        session()->flash('message', trans('Your question has been submitted. It will be answered as soon as possible. Please recheck the website later.'));
+        session()->flash('success', trans('common.faqs page.form.success'));
     }
 
     public function render()

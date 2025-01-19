@@ -11,6 +11,7 @@ return new class extends Migration {
 			$table->id();
 			$table->string('groom_name');
 			$table->string('bride_name');
+            $table->string('background_image')->nullable();
 			$table->json('events');
 			$table->dateTime('date');
 			$table->string('phone')->nullable();

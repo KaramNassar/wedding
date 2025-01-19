@@ -9,6 +9,7 @@ class Setting extends Model
     protected $fillable = [
         'groom_name',
         'bride_name',
+        'background_image',
         'events',
         'date',
         'phone',

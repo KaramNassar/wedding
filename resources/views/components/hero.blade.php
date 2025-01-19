@@ -1,6 +1,6 @@
 <section class="relative text-center py-32">
     <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover opacity-45" style="background-image: url('/hero.jpg');"></div>
+    <div class="absolute inset-0 bg-cover opacity-45" style="background-image: url({{ $settings->background_image }});"></div>
 
     <!-- Content -->
     <div class="relative z-10">

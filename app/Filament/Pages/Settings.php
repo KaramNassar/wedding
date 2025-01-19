@@ -71,6 +71,8 @@ class Settings extends Page implements Forms\Contracts\HasForms
                         ->required(),
                 ]),
 
+            Forms\Components\FileUpload::make('background_image'),
+
             Fieldset::make('Wedding Details')
                 ->schema([
 

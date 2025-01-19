@@ -8,6 +8,7 @@ use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -29,14 +30,15 @@ class Settings extends Page implements Forms\Contracts\HasForms
         $settings = Setting::firstOrNew();
 
         $this->form->fill([
-            'groom_name'      => $settings->groom_name,
-            'bride_name'      => $settings->bride_name,
-            'date'            => $settings->date,
-            'events'          => $settings->events,
-            'phone'           => $settings->phone,
-            'email'           => $settings->email,
-            'main_color'      => $settings->main_color,
-            'secondary_color' => $settings->secondary_color,
+            'groom_name'       => $settings->groom_name,
+            'bride_name'       => $settings->bride_name,
+            'background_image' => $settings->background_image,
+            'date'             => $settings->date,
+            'events'           => $settings->events,
+            'phone'            => $settings->phone,
+            'email'            => $settings->email,
+            'main_color'       => $settings->main_color,
+            'secondary_color'  => $settings->secondary_color,
         ]);
     }
 
@@ -71,7 +73,8 @@ class Settings extends Page implements Forms\Contracts\HasForms
                         ->required(),
                 ]),
 
-            Forms\Components\FileUpload::make('background_image'),
+            FileUpload::make('background_image')
+                ->image(),
 
             Fieldset::make('Wedding Details')
                 ->schema([

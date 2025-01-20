@@ -27,4 +27,6 @@
             </div>
         @endforeach
     </div>
+    <h3 class="text-xl font-bold text-amber-900 sm:text-4xl mt-12">{{ trans('common.notice') }}</h3>
+    <p class="text-lg px-4 text-amber-800 max-w-3xl">{{ trans('common.rsvp') }}</p>
 </x-section>

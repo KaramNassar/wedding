@@ -6,7 +6,6 @@ return [
     'gallery'                                     => 'Gallery',
     'our story'                                   => 'Our Story',
     'faqs'                                        => 'FAQs',
-    'rsvp'                                        => 'RSVP',
     'hero'                                        => 'Join us to celebrate our love on this special day',
     'count down'                                  => [
         'title'    => 'Our Big Day Is Almost Here',
@@ -52,5 +51,7 @@ return [
             'success' => 'Your question has been submitted. It will be answered as soon as possible. Please recheck the website later'
         ]
     ],
+    'rsvp' => 'Please let us know if you would like to attend the event or decline, along with the number of people, before April 1, 2025',
+    'notice' => 'Kindly Note'
 
 ];

@@ -6,7 +6,6 @@ return [
     'gallery'                                     => 'Galerie',
     'our story'                                   => 'Unsere Geschichte',
     'faqs'                                        => 'Häufige Fragen',
-    'rsvp'                                        => 'Antwort erbeten',
     'hero'                                        => 'Feiert unsere Liebe mit uns an diesem besonderen Tag',
     'count down'                                  => [
         'title'    => 'Unser großer Tag rückt näher',
@@ -52,6 +51,7 @@ return [
             'success' => 'Ihre Frage wurde übermittelt. Es wird so schnell wie möglich beantwortet. Bitte überprüfen Sie die Website später noch einmal'
         ]
     ],
-
+    'rsvp' => 'Bitte informieren Sie uns, ob Sie an der Veranstaltung teilnehmen möchten oder absagen, und geben Sie dabei die Anzahl der Personen an, bis zum 1. April 2025',
+    'notice' => 'Bitte beachten Sie'
 
 ];

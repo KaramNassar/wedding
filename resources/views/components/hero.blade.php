@@ -1,9 +1,9 @@
 <section class="relative">
-    <div class="w-full bg-center bg-cover h-[650px]"
+    <div class="w-full h-[700px] bg-center bg-cover sm:bg-top"
          style="background-image: url('storage/{{ $settings->background_image }}');">
         <div class="flex items-center justify-center w-full h-full bg-gray-50 bg-opacity-50">
             <div class="text-center">
-                <h1 class="text-5xl text-amber-900 sm:text-7xl group">
+                <h1 class="text-5xl text-amber-900 sm:text-7xl mt-12 sm:mt-96 group">
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-2 font-great text-amber-900">
                         <span class="font-bold">{{ $settings->groom_name }}</span>
                         <svg class="w-12 h-12 text-amber-900 group-hover:animate-ping" xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@
                         <span class="font-bold">{{ $settings->bride_name }}</span>
                     </div>
                 </h1>
-                <p class="mt-20 text-xl font-semibold text-amber-800">{{ trans('common.hero') }}</p>
+                <p class="mt-10 text-xl font-semibold text-amber-800">{{ trans('common.hero') }}</p>
                 <p class="mt-2 text-2xl font-semibold text-amber-800">{{ Carbon\Carbon::parse($settings->date)->translatedFormat('F d, Y') }}</p>
             </div>
         </div>

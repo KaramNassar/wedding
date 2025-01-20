@@ -5,7 +5,9 @@
 /storage/*.key
 /storage/pail
 /vendor
+/bootstrap
 .env
+.htaccess
 .env.backup
 .env.production
 .phpactor.json

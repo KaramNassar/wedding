@@ -4,41 +4,41 @@
 
         <div class="timer">
             <div
-                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[86px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
-                    class="countdown-element days font-semibold text-2xl text-white text-center">
+                    class="countdown-element days font-semibold text-2xl text-amber-50 text-center">
                 </h3>
-                <p class="text-lg font-normal text-white mt-1 text-center w-full">{{ trans('common.days') }}</p>
+                <p class="text-sm text-amber-100 mt-1 text-center w-full">{{ trans('common.days') }}</p>
             </div>
         </div>
 
         <div class="timer">
             <div
-                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[86px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
-                    class="countdown-element hours font-semibold text-2xl text-white text-center">
+                    class="countdown-element hours font-semibold text-2xl text-amber-50 text-center">
                 </h3>
-                <p class="text-lg font-normal text-white mt-1 text-center w-full">{{ trans('common.hours') }}</p>
+                <p class="text-sm text-amber-100 mt-1 text-center w-full">{{ trans('common.hours') }}</p>
             </div>
         </div>
 
         <div class="timer">
             <div
-                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[86px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
-                    class="countdown-element minutes font-semibold text-2xl text-white text-center">
+                    class="countdown-element minutes font-semibold text-2xl text-amber-50 text-center">
                 </h3>
-                <p class="text-lg fo font-normal text-white mt-1 text-center w-full">{{ trans('common.minutes') }}</p>
+                <p class="text-sm text-amber-100 mt-1 text-center w-full">{{ trans('common.minutes') }}</p>
             </div>
         </div>
 
         <div class="timer">
             <div
-                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                class="rounded-xl bg-amber-900 backdrop-blur-sm py-3 min-w-[86px] flex items-center justify-center flex-col gap-1 px-3">
                 <h3
-                    class="countdown-element seconds font-semibold text-2xl text-white text-center">
+                    class="countdown-element seconds font-semibold text-2xl text-amber-50 text-center">
                 </h3>
-                <p class="text-lg fo font-normal text-white mt-1 text-center w-full">{{ trans('common.seconds') }}</p>
+                <p class="text-sm text-amber-100 mt-1 text-center w-full">{{ trans('common.seconds') }}</p>
             </div>
         </div>
     </div>

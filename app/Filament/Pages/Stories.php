@@ -15,7 +15,7 @@ class Stories extends Page implements Forms\Contracts\HasForms
 
     protected static ?string $navigationIcon = 'heroicon-o-bolt';
     protected static ?string $title = 'Stories';
-    protected static string $view = 'filament.pages.Stories';
+    protected static string $view = 'filament.pages.stories';
 
     public array $data = [];
 
